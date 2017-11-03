@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//css/reveal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11906,6 +11906,51 @@ a.anchor-link {
 {
   background: #727272 !important;
 }
+
+
+.reveal .slides 
+{
+    font-size: 20px;
+    font-family: Meiryo;
+}
+
+body {
+    background-color: #EEEEEE!important;
+    font-family: Meiryo;
+}
+
+.reveal th,td{
+    font-size: 24px;
+}
+
+.reveal .CodeMirror
+{
+    font-size: 24px;
+    
+}
+
+
+.reveal h1 {
+    font-size : 70px;
+    text-align: center;
+    color: #494949
+}
+
+.reveal h2 {
+    font-size : 40px;
+    padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: #f4f4f4;/*背景色*/
+    border-left: solid 5px #333;/*左線*/
+    border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.reveal h3 {
+    font-size : 40px;
+    color : #393939;
+    border-bottom: solid 3px #aaa;    
+}
+
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -11920,8 +11965,7 @@ a.anchor-link {
 <div class="reveal">
 <div class="slides">
 <section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Jubaclassifier-Hands-on">Jubaclassifier Hands-on<a class="anchor-link" href="#Jubaclassifier-Hands-on">&#182;</a></h1><center>
@@ -11932,22 +11976,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#33258;&#24049;&#32057;&#20171;">&#33258;&#24049;&#32057;&#20171;<a class="anchor-link" href="#&#33258;&#24049;&#32057;&#20171;">&#182;</a></h2><p><strong><code>@imaimai1125</code></strong> (github, twitter)</p>
-<ul>
-<li>Jubatus OSSに2015年11月より参加(ちょうど2年！)</li>
-<li>Jubatus本では<strong><code>classifier</code></strong>と<strong><code>burst</code></strong>を担当</li>
-<li>新しい物好き</li>
-</ul>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Agenda">Agenda<a class="anchor-link" href="#Agenda">&#182;</a></h2><ol>
@@ -11958,8 +11987,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#20998;&#39006;&#12392;&#12399;">&#20998;&#39006;&#12392;&#12399;<a class="anchor-link" href="#&#20998;&#39006;&#12392;&#12399;">&#182;</a></h3><p>分類(Classifier)とは、与えられたデータに対して<strong>適切なクラスを推定する処理</strong>を指します。</p>
@@ -11972,8 +12000,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#20998;&#39006;&#12398;&#12452;&#12513;&#12540;&#12472;">&#20998;&#39006;&#12398;&#12452;&#12513;&#12540;&#12472;<a class="anchor-link" href="#&#20998;&#39006;&#12398;&#12452;&#12513;&#12540;&#12472;">&#182;</a></h3><p><p>Harry Potterの組み分け帽を例にとる</p></p>
@@ -11983,8 +12010,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#32218;&#24418;&#20998;&#39006;&#22120;-VS-&#38750;&#32218;&#24418;&#20998;&#39006;&#22120;">&#32218;&#24418;&#20998;&#39006;&#22120; VS &#38750;&#32218;&#24418;&#20998;&#39006;&#22120;<a class="anchor-link" href="#&#32218;&#24418;&#20998;&#39006;&#22120;-VS-&#38750;&#32218;&#24418;&#20998;&#39006;&#22120;">&#182;</a></h3><ul>
@@ -12003,8 +12029,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#23455;&#38555;&#12395;&#21205;&#12363;&#12375;&#12390;&#12415;&#12427;">&#23455;&#38555;&#12395;&#21205;&#12363;&#12375;&#12390;&#12415;&#12427;<a class="anchor-link" href="#&#23455;&#38555;&#12395;&#21205;&#12363;&#12375;&#12390;&#12415;&#12427;">&#182;</a></h2><p>実際にjubaclassifierを動かすことで、
@@ -12013,8 +12038,7 @@ Jubatusについて、分類について学んでいきましょう。</p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#31435;&#12385;&#19978;&#12370;">&#31435;&#12385;&#19978;&#12370;<a class="anchor-link" href="#&#31435;&#12385;&#19978;&#12370;">&#182;</a></h2><h3 id="&#29992;&#24847;&#12375;&#12383;docker&#12398;&#20154;">&#29992;&#24847;&#12375;&#12383;docker&#12398;&#20154;<a class="anchor-link" href="#&#29992;&#24847;&#12375;&#12383;docker&#12398;&#20154;">&#182;</a></h3><ul>
@@ -12033,8 +12057,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#25163;&#38918;">&#25163;&#38918;<a class="anchor-link" href="#&#25163;&#38918;">&#182;</a></h2><ul>
@@ -12051,8 +12074,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Step0.-&#29872;&#22659;&#12398;&#30906;&#35469;">Step0. &#29872;&#22659;&#12398;&#30906;&#35469;<a class="anchor-link" href="#Step0.-&#29872;&#22659;&#12398;&#30906;&#35469;">&#182;</a></h3><p>環境に、以下のものが入っているか確認してください。</p>
@@ -12072,8 +12094,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#37197;&#24067;&#29289;">&#37197;&#24067;&#29289;<a class="anchor-link" href="#&#37197;&#24067;&#29289;">&#182;</a></h3><p>下記のものがフォルダ<strong><code>hands-on-5th/classifier</code></strong>内にあるか確認してください。</p>
@@ -12097,25 +12118,22 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step1.-Jubatus&#12434;&#36215;&#21205;">Step1. Jubatus&#12434;&#36215;&#21205;<a class="anchor-link" href="#Step1.-Jubatus&#12434;&#36215;&#21205;">&#182;</a></h2><ul>
 <li>ターミナルに戻り、下記コマンドを入力します</li>
 <li>線形分類器(AROW)を使ってみます</li>
 </ul>
-<p><b>    
-    <center>
-          `$ jubaclassifier -f config/linear.json -t 1000&`
-    </center>
-</b></p>
-
+<center>
+    <b>
+          $ jubaclassifier -f config/linear.json -t 1000&
+    </b>
+</center>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Jubatus&#20998;&#39006;&#22120;&#12395;&#20837;&#12387;&#12390;&#12356;&#12427;&#12450;&#12523;&#12468;&#12522;&#12474;&#12512;">Jubatus&#20998;&#39006;&#22120;&#12395;&#20837;&#12387;&#12390;&#12356;&#12427;&#12450;&#12523;&#12468;&#12522;&#12474;&#12512;<a class="anchor-link" href="#Jubatus&#20998;&#39006;&#22120;&#12395;&#20837;&#12387;&#12390;&#12356;&#12427;&#12450;&#12523;&#12468;&#12522;&#12474;&#12512;">&#182;</a></h3><p><p>Jubatusでは、線形分類器と非線形分類器にそれぞれ下表のアルゴリズムを用意しています。</p></p>
@@ -12125,8 +12143,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Regularization-Weght&#12392;&#12399;">Regularization Weght&#12392;&#12399;<a class="anchor-link" href="#Regularization-Weght&#12392;&#12399;">&#182;</a></h3><p><p>`Regularization_weight`が大⇛新しく入ってきたデータを何が何でも分類する</p></p>
@@ -12136,8 +12153,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step2.-&#12487;&#12540;&#12479;&#12434;&#35501;&#12415;&#36796;&#12415;&#12289;Datum&#12395;&#22793;&#25563;">Step2. &#12487;&#12540;&#12479;&#12434;&#35501;&#12415;&#36796;&#12415;&#12289;Datum&#12395;&#22793;&#25563;<a class="anchor-link" href="#Step2.-&#12487;&#12540;&#12479;&#12434;&#35501;&#12415;&#36796;&#12415;&#12289;Datum&#12395;&#22793;&#25563;">&#182;</a></h2><ul>
@@ -12152,8 +12168,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
@@ -12230,8 +12245,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Pandas&#12434;&#20351;&#12387;&#12390;&#12487;&#12540;&#12479;&#12434;&#35501;&#12415;&#36796;&#12435;&#12391;&#12415;&#12427;">Pandas&#12434;&#20351;&#12387;&#12390;&#12487;&#12540;&#12479;&#12434;&#35501;&#12415;&#36796;&#12435;&#12391;&#12415;&#12427;<a class="anchor-link" href="#Pandas&#12434;&#20351;&#12387;&#12390;&#12487;&#12540;&#12479;&#12434;&#35501;&#12415;&#36796;&#12435;&#12391;&#12415;&#12427;">&#182;</a></h3>
@@ -12437,8 +12451,7 @@ $ jupyter notebook &amp;</code></pre>
 </div>
 
 </div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#12487;&#12540;&#12479;&#12398;&#35501;&#12415;&#36796;&#12415;">&#12487;&#12540;&#12479;&#12398;&#35501;&#12415;&#36796;&#12415;<a class="anchor-link" href="#&#12487;&#12540;&#12479;&#12398;&#35501;&#12415;&#36796;&#12415;">&#182;</a></h3><ul>
@@ -12518,8 +12531,7 @@ features :
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#23398;&#32722;&#29992;&#12487;&#12540;&#12479;&#12434;Datum&#24418;&#24335;&#12395;&#22793;&#25563;">&#23398;&#32722;&#29992;&#12487;&#12540;&#12479;&#12434;Datum&#24418;&#24335;&#12395;&#22793;&#25563;<a class="anchor-link" href="#&#23398;&#32722;&#29992;&#12487;&#12540;&#12479;&#12434;Datum&#24418;&#24335;&#12395;&#22793;&#25563;">&#182;</a></h3><ul>
@@ -12552,8 +12564,7 @@ features :
 </div>
 
 </div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step3.-&#20316;&#25104;&#12375;&#12383;Datum&#12434;Jubatus&#12469;&#12540;&#12496;&#12395;&#25237;&#20837;">Step3. &#20316;&#25104;&#12375;&#12383;Datum&#12434;Jubatus&#12469;&#12540;&#12496;&#12395;&#25237;&#20837;<a class="anchor-link" href="#Step3.-&#20316;&#25104;&#12375;&#12383;Datum&#12434;Jubatus&#12469;&#12540;&#12496;&#12395;&#25237;&#20837;">&#182;</a></h2>
@@ -12599,8 +12610,7 @@ features :
 </div>
 
 </div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step4.-&#23398;&#32722;&#12514;&#12487;&#12523;&#12434;&#29992;&#12356;&#12390;&#20998;&#39006;&#12434;&#34892;&#12358;">Step4. &#23398;&#32722;&#12514;&#12487;&#12523;&#12434;&#29992;&#12356;&#12390;&#20998;&#39006;&#12434;&#34892;&#12358;<a class="anchor-link" href="#Step4.-&#23398;&#32722;&#12514;&#12487;&#12523;&#12434;&#29992;&#12356;&#12390;&#20998;&#39006;&#12434;&#34892;&#12358;">&#182;</a></h2><ul>
@@ -12630,8 +12640,7 @@ features :
 </div>
 
 </div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#12486;&#12473;&#12488;&#12434;&#12377;&#12427;">&#12486;&#12473;&#12488;&#12434;&#12377;&#12427;<a class="anchor-link" href="#&#12486;&#12473;&#12488;&#12434;&#12377;&#12427;">&#182;</a></h3><p>実際にJubaclassifierにデータを投入し、返ってくるラベルを見る</p>
@@ -12653,8 +12662,7 @@ features :
 </div>
 
 </div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Jubatusがdefaultに対して、<br>
@@ -12697,8 +12705,7 @@ features :
 </div>
 
 </div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step5.-&#32080;&#26524;&#12398;&#20998;&#26512;&#12434;&#34892;&#12358;">Step5. &#32080;&#26524;&#12398;&#20998;&#26512;&#12434;&#34892;&#12358;<a class="anchor-link" href="#Step5.-&#32080;&#26524;&#12398;&#20998;&#26512;&#12434;&#34892;&#12358;">&#182;</a></h2><ul>
@@ -12724,8 +12731,7 @@ features :
 </div>
 
 </div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#20998;&#39006;&#32080;&#26524;&#12398;&#35413;&#20385;&#25351;&#27161;">&#20998;&#39006;&#32080;&#26524;&#12398;&#35413;&#20385;&#25351;&#27161;<a class="anchor-link" href="#&#20998;&#39006;&#32080;&#26524;&#12398;&#35413;&#20385;&#25351;&#27161;">&#182;</a></h3><ul>
@@ -12747,8 +12753,7 @@ features :
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#28151;&#21512;&#34892;&#21015;(Confusion-Matrix)">&#28151;&#21512;&#34892;&#21015;(Confusion Matrix)<a class="anchor-link" href="#&#28151;&#21512;&#34892;&#21015;(Confusion-Matrix)">&#182;</a></h3><p>この4種類を一つの表にまとめたもの</p>
@@ -12758,8 +12763,7 @@ features :
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#31934;&#24230;&#12398;&#35413;&#20385;&#25351;&#27161;">&#31934;&#24230;&#12398;&#35413;&#20385;&#25351;&#27161;<a class="anchor-link" href="#&#31934;&#24230;&#12398;&#35413;&#20385;&#25351;&#27161;">&#182;</a></h3><p>一口に『<strong>精度</strong>』と言っても、実はいろいろある</p>
@@ -12849,8 +12853,7 @@ F_value   : 0.385
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step6.-&#21069;&#20966;&#29702;&#12434;&#12375;&#12390;&#12415;&#12427;">Step6. &#21069;&#20966;&#29702;&#12434;&#12375;&#12390;&#12415;&#12427;<a class="anchor-link" href="#Step6.-&#21069;&#20966;&#29702;&#12434;&#12375;&#12390;&#12415;&#12427;">&#182;</a></h2><ul>
@@ -12868,8 +12871,7 @@ F_value   : 0.385
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Recall&#12434;&#19978;&#12370;&#12427;&#12383;&#12417;&#12395;-=&gt;-&#12450;&#12531;&#12480;&#12540;&#12469;&#12531;&#12503;&#12522;&#12531;&#12464;">Recall&#12434;&#19978;&#12370;&#12427;&#12383;&#12417;&#12395; =&gt; &#12450;&#12531;&#12480;&#12540;&#12469;&#12531;&#12503;&#12522;&#12531;&#12464;<a class="anchor-link" href="#Recall&#12434;&#19978;&#12370;&#12427;&#12383;&#12417;&#12395;-=&gt;-&#12450;&#12531;&#12480;&#12540;&#12469;&#12531;&#12503;&#12522;&#12531;&#12464;">&#182;</a></h3>
@@ -12909,8 +12911,7 @@ F_value   : 0.385
 </div>
 
 </div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
@@ -13021,8 +13022,7 @@ f_value   : 0.398
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Step7.-&#25351;&#27161;&#12398;&#12488;&#12524;&#12540;&#12489;&#12458;&#12501;">Step7. &#25351;&#27161;&#12398;&#12488;&#12524;&#12540;&#12489;&#12458;&#12501;<a class="anchor-link" href="#Step7.-&#25351;&#27161;&#12398;&#12488;&#12524;&#12540;&#12489;&#12458;&#12501;">&#182;</a></h2><ul>
@@ -13511,8 +13511,7 @@ tSRJjbOsJUlqnGUtSVLjLGtJkhpnWUuS1Lj/AmxAfGoQMCwnAAAAAElFTkSuQmCC
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#12414;&#12392;&#12417;">&#12414;&#12392;&#12417;<a class="anchor-link" href="#&#12414;&#12392;&#12417;">&#182;</a></h2><ul>
@@ -13524,8 +13523,7 @@ tSRJjbOsJUlqnGUtSVLjLGtJkhpnWUuS1Lj/AmxAfGoQMCwnAAAAAElFTkSuQmCC
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="NEXT-:-Jubakit">NEXT : Jubakit<a class="anchor-link" href="#NEXT-:-Jubakit">&#182;</a></h1><center> より簡単に分析が可能に！</center>
@@ -13544,8 +13542,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//lib/js/head.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -13560,9 +13558,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0//plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
